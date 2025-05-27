@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:font-family: "Tinos", serif;
+    background-color: rgb(173, 182, 207);
+
+}
+
+header {
+    background-color: rgb(85, 106, 182);
+    color: azure;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+header{
+    top: 0px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    color: #f3f7f7;
+    border:1px solid #f6f9f9;
+    border-radius: 3rem;
+    width:10rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(42, 165, 165);
+ }
+
+.logo{
+    width: 4rem;
+    height: auto;
+    border-radius: 1px;
+}
+
+main{
+    color: aliceblue;
+    text-align: center;
+    }
+
+.fondo{
+    width: cover;
+    height: 20rem;
+}
+
+section{
+    text-align: center;
+    
+}
+
+.container{    
+    display: flex;
+    justify-content: flex-end;
+    bottom: 5%;
+    right: 5%;
+}
+
+.container img{
+    width: 3rem;
+    height: auto;
+}
+
+
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+}
+
+.tarjeta {
+    width: 300px;
+    height: 400px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    border-radius: 2rem;
+    gap: 5px;
+    justify-content: space-between;
+    
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+    border: 1px solid black;
+}
+
+.card-container {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.h2-sec {
+    text-align: left;
+    margin: 1rem;
+}
+
+footer{
+    text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  body {
+    background-color: #de3163;
+  }
+}
