@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family:font-family: "Tinos", serif;
     background-color: rgb(173, 182, 207);
@@ -39,9 +40,31 @@ li{
 
 a{
     text-decoration: none;
-    color: rgb(42, 165, 165);
- }
+    color: black;
+}
 
+
+.icon-carrito {
+    position: relative;
+    top: -5rem;
+    right: -35rem;
+
+    a{
+        border:none;
+        padding: 1 rem 1 rem 0.5rem;
+        color: var(--colortext);
+    }
+
+    .count {position: absolute;
+            bottom: 0.5rem;
+            left: 0;
+            front-size:12px;
+            color: var(--backgroudheader);
+            background-color: var(--colortext);
+            padding:0 0.25rem;
+            border: 1px solid var(--backgroudheader);
+            border-radius: 50%;}
+}
 .logo{
     width: 4rem;
     height: auto;
@@ -121,6 +144,7 @@ section{
     margin: 1rem;
 }
 
+
 footer{
     text-align: center;
 }
@@ -129,4 +153,8 @@ footer{
   body {
     background-color: #de3163;
   }
+}
+
+.tableProduct {
+    align-items: center;
 }

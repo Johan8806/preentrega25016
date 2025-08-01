@@ -9,12 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
     <header>
         <img class="logo" src="./assets/img/jg-letter-logo-isolated-on-white-background-vector.jpg" alt="Imagen del logo">
         <h1>JG Turismo</h1>
+        <div href="./page/carrito.html" class="icon-carrito">
+            <a href="./page/carrito.html" onclick="handleCart()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="90" viewBox="0 0 30 30">
+                <path fill="currentColor" 
+                d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/>
+                </svg>
+                <div class="count"></div>
+            </a>
+        </div>
         <br>
         <br>
     
@@ -30,9 +39,6 @@
                 <li>
                     <a href="./page/contactos.html">Contactos</a>
                 </li>
-                <li>
-                    <a href="./page/carrito.html">Carrito</a>
-                </li>
 
             </ul>
         </nav>
@@ -43,7 +49,7 @@
         <h2>Con gusto te saluda, tu guia de confianza</h2>
         <br>
         <br>
-        <img class="fondo" src="../Proyecto/assets/img/cosas-gratis-que-hacer-en-argentina.jpg" alt="Imagen de fondo">
+        
     
     </main>
     <section>
@@ -53,67 +59,79 @@
         <div class="contenedor-tarjetas">
 
             <div class="tarjeta">
+                <a href="./page/productos.html">
                 <h3>City Tours 12 puntos</h3>
                 <br>
                 <img src="./assets/img/City tour.jpg" alt="city tour">
                 <p>Es una de las mejores formas de explorar la ciudad de manera auténtica. Estas visitas guiadas te permiten descubrir los puntos turísticos más emblemáticos de BA</p>
                 <br>
-                <p>Precio: 15.000 pesos p/persona</p>
+                <p>Precio: $15000.00</p>
+                </a>
                 <br>
-                <button>Contratar</button>
+                <button id="btn-carrito">Contratar</button>
             </div>
 
             <div class="tarjeta">
+                <a href="./page/productos.html">
                 <h3>Show de Tango</h3>
                 <br>
                 <img src="./assets/img/tango.jpg" alt="">
                 <p>El mejor show de tango en BA — Disfruta de leyendas del tango Argentino, en un Show Intimo, creado con alma y estilo. Tango en vivo con musicos y bailarines excepcionales.</p>
                 <br>
-                <p>Precio: 50.000 pesos p/persona</p>
+                <p>Precio: $50000.00</p>
+                </a>
                 <br>
-                <button>Contratar</button>
+                <button id="btn-carrito">Contratar</button>
             </div>
 
             <div class="tarjeta">
+                <a href="./page/productos.html">
                 <h3>Tour Tigre</h3>
                 <br>
                 <img src="./assets/img/tour tigre.jpg" alt="">
                 <p>En esta excursión desde Buenos Aires navegaremos por el Río de la Plata y el Delta del Paraná hasta llegar a Tigre, uno de los destinos más populares de Argentina y que visitaremos a fondo.</p>
                 <br>
-                <p>Precio: 30.000 pesos p/persona</p>
+                <p>Precio: $30000.00</p>
+                </a>
                 <br>
-                <button>Contratar</button>
+                <button id="btn-carrito">Contratar</button>
             </div>
 
             <div class="tarjeta">
+                <a href="./page/productos.html">
                 <h3>Estancia Gaucha</h3>
                 <br>
                 <img src="./assets/img/gaucho.jpg" alt="">
                 <p>Diviértete en una "fiesta gaucha", prueba empanadas argentinas y vino, y disfruta de un paseo a caballo durante una visita de un día a la Estancia Santa Susana.</p>
                 <br>
-                <p>Precio: 120.000 pesos p/persona</p>
+                <p>Precio: $120000.00</p>
+                </a>
                 <br>
-                <button>Contratar</button>
+                <button id="btn-carrito">Contratar</button>
             </div>
             <div class="tarjeta">
+                <a href="./page/productos.html">
                 <h3>Tour Estadios</h3>
                 <br>
                 <img src="./assets/img/estadio 2.jpg" alt="">
                 <p>Vas a conocer la pasión del fútbol argentino desde adentro, recorriendo cuatro estadios emblemáticos y dos museos clásicos que te van a emocionar.</p>
                 <br>
-                <p>Precio: 50.000 pesos p/persona</p>
+                <p>Precio: $50000.00</p>
+                </a>
                 <br>
-                <button>Contratar</button>
+                <button id="btn-carrito">Contratar</button>
             </div>
             <div class="tarjeta">
+                <a href="./page/productos.html">
                 <h3>Experiencia Asado</h3>
                 <br>
                 <img src="./assets/img/ASADO.jpg" alt="">
                 <p>Disfruta de una experiencia exclusiva con esencia del asado argentino, elaborado justo delante de ti en nuestra parrilla única.</p>
                 <br>
-                <p>Precio: 40.000 pesos p/persona</p>
+                <p>Precio: $40000.00</p>
+                </a>
                 <br>
-                <button>Contratar</button>
+                <button id="btn-carrito">Contratar</button>
             </div>
         </div>
         <br>
@@ -143,6 +161,11 @@
         </div>
     </section>
     <br>
+    <section>
+        <div id="carrito">
+
+        </div>
+    </section>
 
     <footer>
         <h3>Derechos reservados</h3>
@@ -150,5 +173,7 @@
         <img src="./assets/img/pngtree-whatsapp-phone-icon-png-image_6315989.png" alt="Whatsapp">
         </div>
     </footer>
+
+    <SCRIPt src="./java/main.js"></SCRIPt>
 </body>
 </html>
